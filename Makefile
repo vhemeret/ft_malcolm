@@ -6,12 +6,12 @@
 #    By: vahemere <vahemere@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/09 20:34:48 by vahemere          #+#    #+#              #
-#    Updated: 2025/04/14 12:28:22 by vahemere         ###   ########.fr        #
+#    Updated: 2025/04/14 13:05:39 by vahemere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = ft_malcolm
-SRC = main.c
+SRC = main.c srcs/parsing.c srcs/utils.c
 OBJ = $(SRC:.c=.o)
 HEADERS = includes/ft_malcolm.h
 CC = gcc
