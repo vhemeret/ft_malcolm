@@ -6,7 +6,7 @@
 /*   By: vahemere <vahemere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 12:13:41 by vahemere          #+#    #+#             */
-/*   Updated: 2025/04/14 13:35:43 by vahemere         ###   ########.fr       */
+/*   Updated: 2025/04/14 14:49:08 by vahemere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,18 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <errno.h>
+#include <ctype.h>
 
 void handleErrorMessage(int code, const char *detail);
 int parsing_args(int ac, char **av);
 
-#define DELIMIP '.'
 #define DELIMAC ':'
 
 #define FAILURE -1
 #define SUCCESS 0
 #define ERR_ARGS 1
 #define ERR_IP_FORMAT 2
-// #define ERR_MAC_FORMAT 3
+#define ERR_MAC_FORMAT 3
 // #define ERR_SOCKET 4
 // #define ERR_INTERFACE 5
 // #define ERR_PERMISSION 6
